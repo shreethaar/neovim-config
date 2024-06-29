@@ -30,9 +30,10 @@ vim.keymap.set('', '[c', function() vscode.call('workbench.action.editor.previou
 vim.keymap.set('', ']C', function() vscode.call('editor.action.dirtydiff.next') end, { noremap = true })
 vim.keymap.set('', '[C', function() vscode.call('editor.action.dirtydiff.previous') end, { noremap = true })
 
-vim.keymap.set('', '<Leader>hr', function() vscode.call('git.revertSelectedRanges') end, { noremap = true })
-vim.keymap.set('', '<Leader>hs', function() vscode.call('git.stageSelectedRanges') end, { noremap = true })
-vim.keymap.set('', '<Leader>hu', function() vscode.call('git.unstageSelectedRanges') end, { noremap = true })
+vim.keymap.set('', 'ghr', function() vscode.call('git.revertSelectedRanges') end, { noremap = true })
+vim.keymap.set('', 'ghs', function() vscode.call('git.stageSelectedRanges') end, { noremap = true })
+vim.keymap.set('', 'ghu', function() vscode.call('git.unstageSelectedRanges') end, { noremap = true })
+vim.keymap.set('', 'ghp', function() vscode.call('editor.action.dirtydiff.next') end, { noremap = true })
 
 vim.keymap.set('', '<C-w>q', function() vscode.call('workbench.action.closeEditorsAndGroup') end, { noremap = true })
 vim.keymap.set('', '<C-w>O', function() vscode.call('workbench.action.closeOtherEditors') end, { noremap = true })
